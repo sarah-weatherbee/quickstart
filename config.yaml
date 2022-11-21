@@ -4,9 +4,9 @@ title: 'My New Hugo Site'
 theme: "hugo-profile"
 
 
-Paginate: 3
-disqusShortname: gurusabarish
-googleAnalytics: G-DWJJVE27WD
+# Paginate: 3
+# disqusShortname:
+# googleAnalytics:
 
 markup:
   goldmark:
@@ -15,11 +15,11 @@ markup:
 
 Menus:
   main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blogs
+    #   weight: 1
 
     - identifier: gallery
       name: Gallery
@@ -46,7 +46,7 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
+  title: "Sarah Weatherbee"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
@@ -59,26 +59,29 @@ params:
   # Whether the fade animations on the home page will be enabled
   animate: true
 
-  custom_css: ["css/custom-style.css"]
+  customCSS: true
+
 
   theme:
-    disableThemeToggle: false
+    disableThemeToggle: true
     # defaultTheme: "light" # dark
 
-  # font:
-  #   fontSize: 1.5rem # default: 1rem
-  #   fontWeight: 500 # default: 400
-  #   lineHeight: 1 # default: 1.5
-  #   textAlign: right # default: left
+  font:
+    fontSize: 1.5rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
 
   # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  color:
+    btnTextColor: '#ffffff'
+    textColor: "#25171A"
+    secondaryTextColor: '#af473c'
+    backgroundColor: '#ffffff'
+    secondaryBackgroundColor: '#ffffff'
+    primaryColor: "#25171A"
+    secondaryColor:
+
 
   #   darkmode:
   #     textColor:
@@ -105,25 +108,26 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
-    title: "Sarah"
-    subtitle: "I am here"
+    intro: "Hello! I am"
+    title: "Sarah Weatherbee"
+    subtitle: "I am here for you"
     content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-    image: /images/hero.svg
+    # image: /images/hero.svg
     button:
       enable: true
       name: "Resume"
       url: "#"
+      color: "white"
       download: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://example.com
-        - icon: fab fa-twitter
+        - icon: fab fa-linkedin
           url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
 
   # About
   about:
@@ -326,8 +330,8 @@ params:
   contact:
     enable: true
     #title: "Custom name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: gurusabarisha@gmail.com
+    # content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: sarahmweatherbee@gmail.com
     btnName: Mail me
 
   footer:

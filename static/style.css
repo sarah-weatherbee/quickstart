@@ -1,0 +1,37 @@
+
+/* Default font for body */
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* secondary font */
+.secondary-font, #secondary-font {
+  font-family: "Poppins", sans-serif;;
+}
+
+/* primary font */
+.primary-font, #primary-font {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Default font */
+.default-font, #default-font {
+  font-family: "Poppins", sans-serif;
+}
+
+a.btn, #a.btn {
+  color: white;
+  background-color: #008f95;
+  padding: 0.7rem 1.75rem;
+}
+
+
+
+/* #hero a.btn {
+  margin-top: 50px;
+  padding: 0.7rem 1.75rem;
+  border: 1px solid var(--primary-color);
+  color: var(--btn-text-color) !important;
+  border-radius: .75rem;
+  transition: none;
+} */

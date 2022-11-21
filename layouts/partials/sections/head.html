@@ -9,19 +9,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload"
       as="style"
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
->
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      >
+
 <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      media="print" onload="this.media='all'" />
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      media="print" onload="this.media='all'"/>
+
 <noscript>
   <link
-          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
+  href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  rel="stylesheet">
 </noscript>
 
 <!-- font configuration -->
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/font.css" media="all">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/static/style.css" media="all">
 
 <!-- Internal templates -->
 {{ template "_internal/google_analytics_async.html" . }}
@@ -42,7 +44,7 @@
 
 <!-- Custom Styles -->
 {{ if .Site.Params.customCSS }}
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/style.css">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/style.css" media="all">
 {{ end }}
 
 <!-- {{ range .Site.Params.custom_css -}}
@@ -56,6 +58,7 @@
         --secondary-background-color: {{ .Site.Params.color.secondaryBackgroundColor | default "#64ffda1a" }};
         --primary-color: {{ .Site.Params.color.primaryColor | default "#007bff" }};
         --secondary-color: {{ .Site.Params.color.secondaryColor | default "#f8f9fa" }};
+        --btn-text-color: {{ .Site.Params.color.btnTextColor | default "#ffffff" }};
 
         /* dark mode colors */
         --text-color-dark: {{ .Site.Params.color.darkmode.textColor | default "#e4e6eb" }};
@@ -71,5 +74,6 @@
         font-weight: {{ .Site.Params.font.fontWeight | default "400" }};
         line-height: {{ .Site.Params.font.lineHeight | default "1.5" }};
         text-align: {{ .Site.Params.font.textAlign | default "left" }};
-        }
+
+      }
 </style>
